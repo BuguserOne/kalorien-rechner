@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Project</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+
+<body>
+    <section>
+        <article>
+            <form>
+                <div><input type="number" name="height" id="height" placeholder="Körpergröße in cm" min="0"></div>
+                <div><input type="number" name="age" id="age" placeholder="Alter in Jahren" min="0"></div>
+                <div><input type="number" name="weight" id="weight" placeholder="Gewicht in kg" min="0"></div>
+                <div>Weiblich <input type="radio" name="sex" checked></div>
+                <div>Männlich <input type="radio" name="sex" id="man"></div>
+                <div>
+                    <select name="activity" id="activityList">
+                        <option value="0.95">Schlafen</option>
+                        <option value="1.2">Nur Sitzen oder Liegen</option>
+                        <option value="1.5">Ausschließlich sitzende Tätigkeit wenig oder keiner körperlichen Aktivität in der Freizeit, z.B. Büroarbeit</option>
+                        <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B. Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer</option>
+                        <option value="1.9">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner, Handwerker, Mechaniker, Hausfrauen</option>
+                        <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
+                    </select>
+                </div>
+                <div><input type="submit" value="submit" id="submit"></div>
+                <div>Grundumsatz
+                    <p id="grundKcal">kcal</p>
+                    <p id="grundKJ">kJ</p>
+                </div>
+                <div>Gesamtumsatz
+                    <p id="gesamtKcal">kcal</p>
+                    <p id="gesamtKJ">kJ</p>
+                </div>
+            </form>
+        </article>
+    </section>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
